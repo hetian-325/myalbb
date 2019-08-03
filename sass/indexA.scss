@@ -1,0 +1,188 @@
+body,p,h1,h2,h3,h4,h5,h6,dl,dd,ul,ol,td,input,textarea,select,hr{
+	margin:0;
+	padding:0;
+}
+body{
+	font-family:"微软雅黑";
+}
+a{
+	text-decoration:none;
+}
+img{
+	border:none;
+}
+ul{
+	list-style:none;
+}
+
+/*header*/
+
+form{
+	width:720px;
+	background-color: #f90;
+	margin:20px auto;
+}
+label{
+	display: inline-block;
+	width:240px;
+	height:43px;
+	line-height: 43px;
+	text-align:right;
+	font-size:12px;
+	color:#666;
+	padding-right: 12px;
+}
+label span{
+	color:#fe0302;
+	vertical-align: middle;
+	margin-right:5px;
+}
+input{
+	width:300px;
+	height:40px;
+	border:2px solid #dcdcdc;
+	padding:0 12px;
+	outline-style: none;
+	font-size:12px;
+	color:#333;
+	box-sizing: border-box;
+}
+.iptBox{
+	margin-bottom:16px;
+}
+.mobileNum{
+	display:flex;
+}
+.mobileLeft{
+	float:left;
+	width:145px;
+	height:40px;
+	border:2px solid #dcdcdc;
+	border-right:none;
+	box-sizing: border-box;
+	font-size:12px;
+	color:#333;
+	line-height: 40px;
+	position: relative;
+	cursor: pointer;
+}
+.mobile1{
+	margin-left:8px;
+}
+.mobile2{
+	margin-left:25px;
+}
+.mobile3{
+	display:inline-block;
+	width:10px;
+	height:10px;
+	background:url(../img/top_r.png) no-repeat;
+	background-position: 2px 3px;
+}
+.mobile4{
+	width:145px;
+	height:250px;
+	border: 1px solid #ededed;
+	background-color:white;
+	position: absolute;
+	top:38px;
+	left:-2px;
+	overflow:auto;
+	display: none
+}
+.guoBox{
+	padding-top:20px;
+}
+.guoBox li{
+	padding:0 20px;
+	height:35px;
+	cursor: pointer;
+}
+.cntBox{
+	height:35px;
+}
+.cntBox span{
+	display: inline-block;
+	height:35px;
+	line-height: 35px;
+}
+.cntBox span:first-child{
+	float:left;
+}
+.cntBox span:last-child{
+	float:right;
+}
+.guoBox li:hover{
+	background-color: #ededed;
+	transition: background .5s ease;
+}
+.mobileRgt{
+	width:155px;
+	float:left;
+	box-sizing: border-box;
+}
+.yzmBig{
+	display:flex;
+}
+.yzmBox{
+	width:300px;
+	height:40px;
+	background:#ededed;
+	position: relative;
+	cursor: pointer;
+}
+.yzmBox p{
+	font-size:12px;
+	color:#333;
+	text-align:center;
+	line-height: 40px;
+}
+.yzmBox span{
+	display: inline-block;
+	width:40px;
+	height:40px;
+	background:white;
+	border:1px solid #dcdcdc;
+	box-sizing: border-box;
+	position: absolute;
+	left:0;
+	top:0;
+	font-size:16px;
+	color:#dcdcdc;
+	text-align:center;
+	line-height: 37px;
+	cursor: move;
+}
+.check_big1{
+	display: flex;
+}
+.check_big{
+	width:300px;
+	height:40px;
+	position: relative;
+}
+.check_big p{
+	font-size:12px;
+	color:#333;
+	text-indent: 30px;
+	line-height: 18px;
+}
+.check_big p a{
+	color:#ff6000;
+}
+.check_box{
+	width:18px;
+	height:18px;
+	position:absolute;
+	left:0;
+	top:0;
+}
+.sbtBtn{
+	width:112px;
+	height:40px;
+	background:#ff6000;
+	font-size:14px;
+	color:white;
+	border:none;
+	cursor: pointer;
+}
