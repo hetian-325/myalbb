@@ -1,7 +1,7 @@
 let gulp = require('gulp');
 let sass = require('gulp-sass');
-let uglify = require('gulp-uglify');
-let babel = require('gulp-babel');
+// let uglify = require('gulp-uglify');
+// let babel = require('gulp-babel');
 
 
 gulp.task("watchall",async ()=>{
@@ -13,10 +13,10 @@ gulp.task("watchall",async ()=>{
 
 	gulp.watch("js/*.js",async ()=>{
 		gulp.src("js/*.js")
-		.pipe(babel({
-			presets:['es2015']
-		}))
-		.pipe(uglify())
+		// .pipe(babel({
+		// 	presets:['es2015']
+		// }))
+		// .pipe(uglify())
 		.pipe(gulp.dest("D:\\phpStudy\\WWW\\albb\\js"));
 	});
 
