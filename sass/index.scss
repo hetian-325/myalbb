@@ -741,6 +741,24 @@ ul{
 	background:white;
 	margin-top: 20px;
 }
+.uls_box{
+	display:flex;
+}
+.uls_box li{
+	flex:1;
+	height:45px;
+	line-height:45px;
+	border-right:1px solid #ededed;
+	border-bottom:1px solid #ededed;
+	box-sizing:border-box;
+	font-size:12px;
+	color:#888888;
+}
+.brb_cnt div{
+	width:220px;
+	height:90px;
+	border-bottom:1px dashed #e2e2e2;
+}
 
 /*section*/
 .section{
