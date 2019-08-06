@@ -1,3 +1,48 @@
+// 轮播图
+	let box1 = $(".ban_cnt_top");
+	let box2 = $(".bct_box_1");
+	let box3 = $(".bct_box_2");
+	let arrImg1 = ['url(img/banner1.webp)','url(img/banner4.webp)','url(img/banner7.webp)','url(img/banner10.webp)','url(img/banner13.webp)'];
+	let arrImg2 = ['url(img/banner2.webp)','url(img/banner5.webp)','url(img/banner8.webp)','url(img/banner11.webp)','url(img/banner14.webp)'];
+	let arrImg3 = ['url(img/banner3.webp)','url(img/banner6.webp)','url(img/banner9.webp)','url(img/banner12.webp)','url(img/banner15.webp)'];
+
+	let myTimer = null;
+	let ord = 0;
+	$(function(){
+		box1.css("background",arrImg1[ord]);
+		reset();
+		autoplay();
+		myTimer = setInterval(function(){
+			reset();
+			ord++;
+			if(ord>4){
+				ord=0;
+			}
+			autoplay();
+		},3000);
+	})
+	function autoplay(){
+		box1.css("background",arrImg1[ord]);
+		box2.css("background",arrImg2[ord]);
+		box3.css("background",arrImg3[ord]);
+		box2.animate({
+			left:0
+		},500,function(){
+			box3.animate({
+				left:0,
+				opacity:1
+			});
+		});
+	}
+	function reset(){
+		box1.css("background",arrImg1[ord]);
+		box2.css("left","-700px");
+		box3.css({
+			opacity:0,
+			left:'-50px'
+		});
+	}
+
 
 window.onload = function(){
 	// 顶部左侧
@@ -117,13 +162,10 @@ window.onload = function(){
 }
 
 $(function(){
-	let left1 = $(".bcb_box_1").css("left");
-	let left2 = $(".bcb_box_2").css("left");
-	let left3 = $(".bcb_box_3").css("left");
-		$(".ban_cnt_btm > span:first").click(function(){
-			$(".bcb_box").animate({left:'+=700px'},"slow");
-		});
-		$(".ban_cnt_btm > span:last").click(function(){
-			$(".bcb_box").animate({left:'-=700px'},"slow");
-		});
+	$(".ban_cnt_btm > span:first").click(function(){
+		$(".bcb_box").animate({left:'+=700px'},"slow");
+	});
+	$(".ban_cnt_btm > span:last").click(function(){
+		$(".bcb_box").animate({left:'-=700px'},"slow");
+	});
 });

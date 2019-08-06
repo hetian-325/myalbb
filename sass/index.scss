@@ -568,7 +568,22 @@
 .ban_cnt_top{
 	width:700px;
 	height:300px;
-	background:pink;
+	overflow:hidden;
+	position:relative;
+	.bct_box_1{
+		width:700px;
+		height:300px;
+		position:absolute;
+		left:-700px;
+		top:0px;
+	}
+	.bct_box_2{
+		width:700px;
+		height:300px;
+		position:absolute;
+		left:-300px;
+		top:0px;
+	}
 }
 .ban_cnt_btm{
 	width:700px;
