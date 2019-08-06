@@ -4,264 +4,6 @@
 	width:100%;
 	height:124px;
 }
-.header_top{
-	width:100%;
-	height:30px;
-	border-bottom:1px solid #ddd;
-}
-.top_cnt{
-	width:1190px;
-	height:30px;
-	margin:0 auto;
-	font-size:12px;
-	color:#555555;
-	line-height:30px;
-}
-.top_cnt a{
-	color:#555555;
-}
-.top_cnt a:hover{
-	color:#ff6000;
-}
-.cnt_a{
-	float:left;
-	width:80px;
-	height:30px;
-	background:url("../img/top_bg.png") no-repeat;
-	background-position:5px -112px;
-	text-indent:22px;
-}
-.cnt_b{
-	float:left;
-	width:120px;
-	height:30px;
-	text-align:center;
-	background:url("../img/top_bg.png") no-repeat;
-	background-position:-15px -144px;
-}
-.cnt_c{
-	position:relative;
-	float:left;
-	width:55px;
-	height:30px;
-	background:url("../img/top_hb.png") no-repeat left center;
-	text-indent:15px;
-}
-.cnt_d{
-	float:left;
-	width:55px;
-	height:30px;
-	text-align:center;
-}
-.c_box{
-	width:250px;
-	height:100px;
-	background:white;
-	border:1px solid #ddd;
-	position:absolute;
-	left:-16px;
-	top:30px;
-	display:none;
-	z-index: 1;
-}
-.c_box p{
-	font-size:14px;
-	color:#555;
-}
-.c_box span{
-	display:inline-block;
-	width:90px;
-	color:#ff6000;
-}
-.c_box .c_box1{
-	width:0;
-	height:0;
-	border:5px solid transparent;
-	border-bottom-color:#f4e9e9;
-	position:absolute;
-	left:18px;
-	top:-10px;
-}
-.c_box .c_box2{
-	position:absolute;
-	right:10px;
-	top:0;
-	font-size:20px;
-	color:#ccc;
-	cursor:pointer;
-}
-.top_right{
-	float:right;
-}
-.top_right li{
-	position:relative;
-	float:left;
-	background:url(../img/top_bg.png) no-repeat right -144px;
-}
-.top_right li div{
-	padding:0 10px;
-}
-.top_right li .img_box{
-	background:url(../img/top_bg.png) no-repeat 46px 7px;
-}
-.top_right li .img_a{
-	padding-right:15px;
-}
-.top_right li .img_a .shuZi{
-	color:white;
-}
-.top_right li a{
-	padding-right:9px;
-	background:url(../img/top_r.png) no-repeat;
-	background-position: right 6px;
-}
-.top_right li a img{
-	vertical-align:middle;
-	margin-right:4px;
-}
-.top_right li .selectBox1{
-	padding:0px;
-	width:210px;
-	background:white;
-	border:1px solid #ddd;
-	border-top:none;
-	position:absolute;
-	left:-1px;
-	top:31px;
-	display:none;
-}
-.top_right li .selectBox1 div{
-	float:left;
-	padding:0px;
-	margin:0 5px;
-}
-.top_right li .selectBox1 a{
-	background:none;
-	padding:0px;
-}
-.top_right li .selectBox2{
-	padding:0px;
-	width:420px;
-	height:90px;
-	background:white;
-	border:1px solid #ddd;
-	border-top:none;
-	position:absolute;
-	left:-1px;
-	top:31px;
-	display:none;
-}
-.top_right li .selectBox2 div{
-	padding:0px;
-	width:100%;
-	height:40px;
-	position:absolute;
-	left:0;
-	bottom:0;
-	background-color: #f2f2f2;
-}
-.top_right li .selectBox2 a{
-	margin-top:10px;
-	margin-right:10px;
-	background-image:none;
-	padding:0px;
-	float:right;
-	width:60px;
-	height:20px;
-	text-align:center;
-	line-height:20px;
-	color:white;
-	background-color:#f90;
-}
-.top_right li .selectBox3{
-	padding:0px;
-	width:210px;
-	background:white;
-	border:1px solid #ddd;
-	border-top:none;
-	position:absolute;
-	left:-1px;
-	top:31px;
-	display:none;
-}
-.top_right li .selectBox3 div{
-	float:left;
-	padding:0px;
-	margin:0 5px;
-}
-.top_right li .selectBox3 a{
-	background:none;
-	padding:0px;
-}
-.top_right li .selectBox4{
-	padding:0px;
-	width:120px;
-	background:white;
-	border:1px solid #ddd;
-	border-top:none;
-	position:absolute;
-	left:-1px;
-	top:31px;
-	display:none;
-}
-.top_right li .selectBox4 div{
-	text-align:center;
-	padding:0px;
-}
-.top_right li .selectBox4 a{
-	background:none;
-	padding:0px;
-}
-.top_right li .selectBox{
-	padding:0px;
-	width:100%;
-	background:white;
-	border:1px solid #ddd;
-	border-top:none;
-	position:absolute;
-	left:-1px;
-	top:31px;
-	text-align:center;
-	display:none;
-	z-index: 1;
-}
-.top_right li .selectBox div{
-	padding:0px;
-}
-.top_right li .selectBox a{
-	background:none;
-	padding:0px;
-}
-.top_right li .selectBox8{
-	padding:0px;
-	width:440px;
-	background:white;
-	border:1px solid #ddd;
-	border-top:none;
-	position:absolute;
-	right:-1px;
-	top:31px;
-	display:none;
-	z-index: 1;
-}
-.top_right li .selectBox8 div{
-	padding: 0;
-	overflow: hidden;
-}
-.top_right li .selectBox8 dt{
-	text-align:center;
-	width:100px;
-	float:left;
-}
-.top_right li .selectBox8 dd{
-	width:340px;
-	float:left;
-}
-.top_right li .selectBox8 a{
-	background:url(../img/top_bg.png) no-repeat right -152px;
-	padding:0 10px;
-}
-
 .srh_box{
 	width:1190px;
 	height:93px;
@@ -290,6 +32,7 @@
 	transition:all .5s;
 	position:relative;
 	cursor:pointer;
+	z-index:1;
 }
 .ipt_box .ipt_uls span{
 	position:absolute;
@@ -895,6 +638,7 @@
 	position:absolute;
 	top:82px;
 	left:0;
+	z-index:1;
 	display:none;
 }
 .brt_box img{
@@ -910,6 +654,7 @@
 	height:210px;
 	background:white;
 	margin-top: 20px;
+	position:relative;
 	.brt_gun{
 		width:220px;
 		height:15px;
@@ -924,15 +669,31 @@
 			}
 			div{
 				position:absolute;
-				right:60px;
+				right:16px;
 				top:-2px;
 				a{
 					display:block;
 					font-size:12px;
 					color:#333;
 					line-height:20px;
+					&:hover{
+						color:#f77400;
+					}
 				}
 			}
+		}
+	}
+	.brb_btm{
+		width:260px;
+		height:34px;
+		background:#fef4f1;
+		position:absolute;
+		left:0px;
+		bottom:0px;
+		line-height:34px;
+		a{
+			font-size:12px;
+			color:#f77400;
 		}
 	}
 }

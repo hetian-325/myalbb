@@ -249,3 +249,15 @@ $(function(){
 		}
 	});
 });
+
+$(function(){
+	var myTimer = setInterval(function(){
+		$(".gun_box > div").animate({
+			top:'-=20'
+		},"slow",function(){
+			if($(".gun_box > div").css("top")=="-82px"){
+				$(".gun_box > div").css("top","-2px");
+			}
+		});
+	},2000);
+});

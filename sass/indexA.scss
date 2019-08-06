@@ -1,8 +1,36 @@
 
 /*header*/
+.header{
+		width:952px;
+		height:49px;
+		margin:0 auto;
+		padding:12px 4px;
+		div{
+			a{
+				float:left;
+				width:161px;
+				height:49px;
+				border-radius:4px;
+				margin-right:12px;
+				background:url(../img/dl_logo.png) no-repeat right center;
+			}
+			span{
+				float:left;
+				width:120px;
+				height:35px;
+				line-height:35px;
+				font-size:22px;
+				color:#666;
+				font-weight:bold;
+				padding-left:12px;
+				margin-top:7px;
+				border-left:1px solid #ccc;
+			}
+		}
+}
+// section
 form{
 	width:720px;
-	background-color: #f90;
 	margin:20px auto;
 }
 label{
@@ -168,4 +196,34 @@ input{
 	color:white;
 	border:none;
 	cursor: pointer;
+}
+// footer
+.footer{
+	width:990px;
+	height:60px;
+	margin:0 auto;
+	border-top:3px solid #ff7300;
+	.ftr_top{
+		height:18px;
+		color:#999;
+		padding:8px 0;
+		font-size:12px;
+		p{
+			margin-left:160px;
+			float:left;
+		}
+		ul{
+			float:left;
+			display:flex;
+			li{
+				margin:0 5px;
+				a{
+					color:#333;
+					&:hover{
+						color:red;
+					}
+				}
+			}
+		}
+	}
 }
