@@ -584,6 +584,44 @@
 		left:-300px;
 		top:0px;
 	}
+	.douBox{
+		width:100px;
+		height:14px;
+		position:absolute;
+		right:20px;
+		bottom:10px;
+		li{
+			width:12px;
+			height:12px;
+			border:1px solid #e5e5e5;
+			cursor:pointer;
+			margin:0 3px;
+			float:left;
+		}
+	}
+	.arrowBox{
+		span{
+			cursor:pointer;
+			display:block;
+			width:40px;
+			height:80px;
+			background:black;
+			opacity:.3;
+			font-size:40px;
+			color:white;
+			text-align:center;
+			line-height:76px;
+			position:absolute;
+			top:110px;
+			display:none;
+			&:first-child{
+				left:0px;
+			}
+			&:last-child{
+				right:0px;
+			}
+		}
+	}
 }
 .ban_cnt_btm{
 	width:700px;
@@ -603,92 +641,50 @@
 		top:80px;
 		z-index:1;
 		cursor:pointer;
+		background:black;
+		opacity:.4;
 		&:first-child{
-			background:#e5e5e5;
 			left:0px;
 		}
 		&:last-child{
-			background:#b2b2b2;
 			right:0px;
 		}
 	}
-	.bcb_box{
-			position:absolute;
-			top:0px;
-		&:nth-child(2){
-			left:0px;
-		}
-		&:nth-child(3){
-			left:700px;
-		}
-		&:nth-child(4){
-			left:1400px;
-		}
+	.bcb_bigBox{
+		position:absolute;
+		left:0;
+		top:0;
 	}
 }
-.bcb_box{
+.bcb_bigBox{
 	width:700px;
 	height:210px;
-	background:white;
-	.bcb_left{
-		width:160px;
-		float:left;
-		text-align:center;
-		a{
-			display:block;
-			h4{
-				font-size:16px;
-				line-height:30px;
-				color:#33336c;
-				padding-top:20px;
-				&:hover{
-					color:#ff6000;
-				}
-			}
-			p{
-				font-size:12px;
-				line-height:12px;
-				color:#999999;
-				&:hover{
-					color:#ff6000;
-				}
-			}
+	.bcb_box{
+		width:700px;
+		height:210px;
+		background:white;
+		position:absolute;
+		top:0px;
+		&:nth-child(1){
+			left:0px;
 		}
-		img{
-			width:100px;
-			height:100px;
-			margin-top:20px;
-			&:hover{
-				transform:scale(1.1);
-				transition:all .5s;
-			}
+		&:nth-child(2){
+			left:700px;
 		}
-	}
-	.bcb_right{
-		width:538px; 
-		float:left;
-		display:flex;
-		flex-wrap:wrap;
-		div{
-			width:269px;
-			height:104px;
-			box-sizing:border-box;
-			border-left:1px solid #f1f1f1;
-			border-top:1px solid #f1f1f1;
-			&:nth-child(1){
-				border-top:none;
-			}
-			&:nth-child(2){
-				border-top:none;
-			}
+		&:nth-child(3){
+			left:1400px;
+		}
+		.bcb_left{
+			width:160px;
+			float:left;
+			text-align:center;
 			a{
-				float:left;
+				display:block;
 				h4{
 					font-size:16px;
 					line-height:30px;
 					color:#33336c;
 					padding-top:20px;
-					margin-left:20px;
 					&:hover{
 						color:#ff6000;
 					}
@@ -697,27 +693,75 @@
 					font-size:12px;
 					line-height:12px;
 					color:#999999;
-					margin-left:20px;
 					&:hover{
 						color:#ff6000;
 					}
 				}
 			}
 			img{
-				width:80px;
-				height:80px;
-				float:left;
-				margin-top:13px;
-				margin-left:25px;
+				width:100px;
+				height:100px;
+				margin-top:20px;
 				&:hover{
 					transform:scale(1.1);
 					transition:all .5s;
 				}
 			}
 		}
-	}
-}       
-
+		.bcb_right{
+			width:538px; 
+			float:left;
+			display:flex;
+			flex-wrap:wrap;
+			div{
+				width:269px;
+				height:104px;
+				box-sizing:border-box;
+				border-left:1px solid #f1f1f1;
+				border-top:1px solid #f1f1f1;
+				&:nth-child(1){
+					border-top:none;
+				}
+				&:nth-child(2){
+					border-top:none;
+				}
+				a{
+					float:left;
+					h4{
+						font-size:16px;
+						line-height:30px;
+						color:#33336c;
+						padding-top:20px;
+						margin-left:20px;
+						&:hover{
+							color:#ff6000;
+						}
+					}
+					p{
+						font-size:12px;
+						line-height:12px;
+						color:#999999;
+						margin-left:20px;
+						&:hover{
+							color:#ff6000;
+						}
+					}
+				}
+				img{
+					width:80px;
+					height:80px;
+					float:left;
+					margin-top:13px;
+					margin-left:25px;
+					&:hover{
+						transform:scale(1.1);
+						transition:all .5s;
+					}
+				}
+			}
+		}
+	}       
+}
 .ban_rht{
 	width:260px;
 	text-align: center;
@@ -866,6 +910,31 @@
 	height:210px;
 	background:white;
 	margin-top: 20px;
+	.brt_gun{
+		width:220px;
+		height:15px;
+		margin:90px auto;
+		padding:14px 0;
+		.gun_box{
+			overflow:hidden;
+			position:relative;
+			img{
+				height:15px;
+				float:left;
+			}
+			div{
+				position:absolute;
+				right:60px;
+				top:-2px;
+				a{
+					display:block;
+					font-size:12px;
+					color:#333;
+					line-height:20px;
+				}
+			}
+		}
+	}
 }
 .uls_box{
 	display:flex;
