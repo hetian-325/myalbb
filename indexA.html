@@ -160,9 +160,27 @@
 	</div>
 	<!-- section -->
 	<form action="">
-		<div class="iptBox"><label><span>*</span>会员名：</label><input type="text" placeholder="设置会员名"></div>
-		<div class="iptBox"><label><span>*</span>登录密码：</label><input type="password" placeholder="设置你的登录密码"></div>
-		<div class="iptBox"><label><span>*</span>密码确认：</label><input type="password" placeholder="请再次输入你的登录密码"></div>
+		<div class="iptBox iptBox1">
+			<label><span>*</span>会员名：</label><input class="username" type="text" placeholder="设置会员名">
+			<p class="tan_word1">会员名为5-25个字符，需包含字母或汉字</p>
+			<div class="tan_box1">
+				<span></span>
+				<p>5-25个字符，需包含字母或汉字</p>
+				<p>请勿包含身份证/银行卡等隐私信息，一旦设置成功无法修改</p>
+			</div>
+		</div>
+		<div class="iptBox iptBox2"><label><span>*</span>登录密码：</label><input type="password" placeholder="设置你的登录密码" class="userpass">
+			<p class="tan_word2">密码设置不符合要求</p>
+			<div class="tan_box2">
+				<span></span>
+				<p>6-20个字符，密码不能是相同的用户名</p>
+				<p>只能包含数字、字母以及标点符号（除空格）</p>
+				<p>字母、数字至少包含两种</p>
+			</div>
+		</div>
+		<div class="iptBox"><label><span>*</span>密码确认：</label><input type="password" placeholder="请再次输入你的登录密码" class="userpassA">
+			<p class="tan_word3">两次输入的密码不一致，请重新输入</p>
+		</div>
 		<div class="iptBox mobileNum"><label><span>*</span>手机号码：</label>
 			<div>
 				<div class="mobileLeft">
@@ -178,42 +196,42 @@
 							</li>
 							<li>
 								<div class="cntBox">
-									<span>中国大陆</span><span>+86</span>
+									<span>中国台湾</span><span>+886</span>
 								</div>
 							</li>
 							<li>
 								<div class="cntBox">
-									<span>中国大陆</span><span>+86</span>
+									<span>中国香港</span><span>+852</span>
 								</div>
 							</li>
 							<li>
 								<div class="cntBox">
-									<span>中国大陆</span><span>+86</span>
+									<span>中国4</span><span>+861</span>
 								</div>
 							</li>
 							<li>
 								<div class="cntBox">
-									<span>中国大陆</span><span>+86</span>
+									<span>中国5</span><span>+862</span>
 								</div>
 							</li>
 							<li>
 								<div class="cntBox">
-									<span>中国大陆</span><span>+86</span>
+									<span>中国6</span><span>+863</span>
 								</div>
 							</li>
 							<li>
 								<div class="cntBox">
-									<span>中国大陆</span><span>+86</span>
+									<span>中国7</span><span>+864</span>
 								</div>
 							</li>
 							<li>
 								<div class="cntBox">
-									<span>中国大陆</span><span>+86</span>
+									<span>中国8</span><span>+865</span>
 								</div>
 							</li>
 							<li>
 								<div class="cntBox">
-									<span>中国大陆</span><span>+86</span>
+									<span>中国9</span><span>+866</span>
 								</div>
 							</li>
 						</ul>
@@ -222,10 +240,11 @@
 				<input class="mobileRgt" type="text">
 			</div>
 		</div>
+		<p class="tan_word4">手机号码格式不正确，请重新输入</p>
 		<div class="iptBox yzmBig"><label><span>*</span>验证码：</label>
 			<div class="yzmBox">
-				<p>请按住滑块，拖到最右边</p>
 				<span>>></span>
+				<!-- <p>请按住滑块，拖到最右边</p> -->
 			</div>
 		</div>
 		<div class="iptBox check_big1"><label></label>
@@ -258,3 +277,4 @@
 </html>
 <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 <script type="text/javascript" src="js/indexA.js"></script>
+<script type="text/javascript" src="js/regTools.js"></script>

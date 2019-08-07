@@ -231,6 +231,18 @@ window.onload = function(){
 			boxs_2[index].style.display="block";
 		}
 	}
+	// 添加商品1
+	ajax01({
+		"url":"getGoodsList1.php",
+		"method":"get",
+		"func":showshop1
+	});
+	// 添加商品2
+	ajax01({
+		"url":"getGoodsList.php",
+		"method":"get",
+		"func":showshop
+	});
 }
 
 $(function(){
@@ -250,6 +262,7 @@ $(function(){
 	});
 });
 
+// 新闻滚动
 $(function(){
 	var myTimer = setInterval(function(){
 		$(".gun_box > div").animate({
@@ -261,3 +274,112 @@ $(function(){
 		});
 	},2000);
 });
+
+function showshop1(str){
+	let arr1 = JSON.parse(str);
+	let htmlStr1 = "";
+	for(let i=0;i<arr1.length;i++){
+	htmlStr1+=`
+	<div class="stn_con">
+		<div class="con_left">
+			<h3><a href="#">${arr1[i].goodsName}</a></h3>
+			<p><a href="#">${arr1[i].goodsDesc}</a></p>
+			<a href="#"><img src="${arr1[i].goodsImg}"></a>
+			<div><a href="#">${arr1[i].beiyong1}</a><a href="#">${arr1[i].beiyong2}</a></div>
+		</div>
+		<div class="con_right">
+			<div class="right_top">
+				<a href="#">
+						<h3>时尚箱包</h3>
+						<p>淘宝热卖</p>
+						<img src="${arr1[i].beiyong3}">
+				</a>
+				<a href="#">
+						<h3>服饰配件</h3>
+						<p>淘宝热卖</p>
+						<img src="${arr1[i].beiyong4}">
+				</a>
+				<a href="#">
+						<h3>臻品内衣</h3>
+						<p>淘宝精选</p>
+						<img src="${arr1[i].beiyong5}">
+				</a>
+			</div>
+			<div class="right_bottom">
+				<p>
+					<a href="#">热卖男装</a>
+					<a href="#">源选厂货</a>
+					<a href="#">裙子</a>
+					<a href="#">元气潮帽</a>
+				</p>
+				<p>
+					<a href="#">热卖男装</a>
+					<a href="#">源选厂货</a>
+					<a href="#">裙子</a>
+					<a href="#">元气潮帽</a>
+				</p>
+			</div>
+		</div>
+	</div>
+	`;
+	}
+	$(".stn_con_box")[0].innerHTML=htmlStr1;
+}
+
+function showshop(str){
+	let arr = JSON.parse(str);
+	let htmlStr = "";
+	for(let i=0;i<arr.length;i++){
+		htmlStr += `
+		<a href="#">
+			<div class="more_1">
+				<div style="
+					width:222px;
+					height:222px;
+					overflow:hidden;
+				">
+				<img src="${arr[i].goodsImg}" style="
+					width:222px;
+					height:222px;
+					display:block;
+					">
+				</div>
+				<div style="
+					width:222px;
+					height:74px;
+					background:white;
+					padding-top:17px;
+					">
+					<div style="
+						width:194px;
+						overflow: hidden;
+						margin:0 auto;
+						">
+						<h4 style="
+							font-size:12px;
+							color:#ff8800;
+							float:left;
+						">￥${arr[i].goodsPrice}</h4>
+						<span style="
+							font-size:12px;
+							color:#c2a599;
+							float:right;
+							">30天成交${arr[i].goodsCount}件</span>
+					</div>
+					<p style="
+						width:194px;
+						margin:10px auto 0;
+						font-size:12px;
+						color:#666666;
+					">${arr[i].goodsDesc}</p>
+				</div>
+				<div class="zzBox">
+					<p>相似货源</p>
+					<a>发现更多相似货源></a>
+				</div>
+			</div>
+		</a>
+		`;
+	}
+	$(".more_box")[0].innerHTML=htmlStr;
+}

@@ -61,6 +61,92 @@ input{
 .iptBox{
 	margin-bottom:16px;
 }
+.iptBox1{
+	position:relative;
+	.tan_word1{
+		text-indent:252px;
+		font-size:12px;
+		color:red;
+		line-height:20px;
+		display:none;
+	}
+	.tan_box1{
+		width:260px;
+		height:60px;
+		padding:20px;
+		background:white;
+		border:1px solid #dcdcdc;
+		position:absolute;
+		top:3px;
+		right:-155px;
+		display:none;
+		span{
+			display:block;
+			width:0;
+			height:0;
+			border:8px solid transparent;
+			border-right-color:#dcdcdc;
+			position:absolute;
+			left:-16px;
+			top:10px;
+		}
+		p{
+			font-size:12px;
+			color:#666;
+			line-height:20px;
+		}
+	}
+}
+.iptBox2{
+	position:relative;
+	.tan_word2{
+		text-indent:252px;
+		font-size:12px;
+		color:red;
+		line-height:20px;
+		display:none;
+	}
+	.tan_box2{
+		width:260px;
+		height:60px;
+		padding:20px;
+		background:white;
+		border:1px solid #dcdcdc;
+		position:absolute;
+		top:3px;
+		right:-155px;
+		display:none;
+		span{
+			display:block;
+			width:0;
+			height:0;
+			border:8px solid transparent;
+			border-right-color:#dcdcdc;
+			position:absolute;
+			left:-16px;
+			top:10px;
+		}
+		p{
+			font-size:12px;
+			color:#666;
+			line-height:20px;
+		}
+	}
+}
+.tan_word3{
+		text-indent:252px;
+		font-size:12px;
+		color:red;
+		line-height:20px;
+		display:none;
+}
+.tan_word4{
+		text-indent:252px;
+		font-size:12px;
+		color:red;
+		line-height:20px;
+		display:none;
+}
 .mobileNum{
 	display:flex;
 }
@@ -96,10 +182,11 @@ input{
 	border: 1px solid #ededed;
 	background-color:white;
 	position: absolute;
-	top:38px;
-	left:-2px;
+	top:39px;
+	left:-1px;
 	overflow:auto;
-	display: none
+	display: none;
+	z-index:3;
 }
 .guoBox{
 	padding-top:20px;
@@ -196,34 +283,4 @@ input{
 	color:white;
 	border:none;
 	cursor: pointer;
-}
-// footer
-.footer{
-	width:990px;
-	height:60px;
-	margin:0 auto;
-	border-top:3px solid #ff7300;
-	.ftr_top{
-		height:18px;
-		color:#999;
-		padding:8px 0;
-		font-size:12px;
-		p{
-			margin-left:160px;
-			float:left;
-		}
-		ul{
-			float:left;
-			display:flex;
-			li{
-				margin:0 5px;
-				a{
-					color:#333;
-					&:hover{
-						color:red;
-					}
-				}
-			}
-		}
-	}
 }

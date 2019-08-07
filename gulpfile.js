@@ -11,6 +11,11 @@ gulp.task("watchall",async ()=>{
 		.pipe(gulp.dest("D:\\phpStudy\\WWW\\albb"));
 	});
 
+	gulp.watch("*.php",async ()=>{
+		gulp.src("*.php")
+		.pipe(gulp.dest("D:\\phpStudy\\WWW\\albb"));
+	});
+
 	gulp.watch("js/*.js",async ()=>{
 		gulp.src("js/*.js")
 		// .pipe(babel({

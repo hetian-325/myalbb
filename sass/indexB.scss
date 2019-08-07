@@ -209,33 +209,4 @@
 			}
 		}
 	}
-	.footer{
-		width:990px;
-		height:50px;
-		margin:0 auto;
-		border-top:3px solid #ff7300;
-		.ftr_top{
-			height:18px;
-			color:#999;
-			padding:8px 0;
-			font-size:12px;
-			p{
-				margin-left:160px;
-				float:left;
-			}
-			ul{
-				float:left;
-				display:flex;
-				li{
-					margin:0 5px;
-					a{
-						color:#333;
-						&:hover{
-							color:red;
-						}
-					}
-				}
-			}
-		}
-	}
 }
