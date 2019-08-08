@@ -274,11 +274,68 @@ $(function(){
 		});
 	},2000);
 });
+$(".stn_bottom div").click(function(){
+	ajax01({
+		"url":"getGoodsList1.php",
+		"method":"get",
+		"func":showshop2
+	});
+});
+function showshop2(str){
+	let arr2 = JSON.parse(str);
+	let htmlStr2 = "";
+	for(let i=0;i<arr2.length;i++){
+	htmlStr2+=`
+	<div class="stn_con">
+		<div class="con_left">
+			<h3><a href="#">${arr2[i].goodsName}</a></h3>
+			<p><a href="#">${arr2[i].goodsDesc}</a></p>
+			<a href="#"><img src="${arr2[i].goodsImg}"></a>
+			<div><a href="#">${arr2[i].beiyong1}</a><a href="#">${arr2[i].beiyong2}</a></div>
+		</div>
+		<div class="con_right">
+			<div class="right_top">
+				<a href="#">
+						<h3>时尚箱包</h3>
+						<p>淘宝热卖</p>
+						<img src="${arr2[i].beiyong3}">
+				</a>
+				<a href="#">
+						<h3>服饰配件</h3>
+						<p>淘宝热卖</p>
+						<img src="${arr2[i].beiyong4}">
+				</a>
+				<a href="#">
+						<h3>臻品内衣</h3>
+						<p>淘宝精选</p>
+						<img src="${arr2[i].beiyong5}">
+				</a>
+			</div>
+			<div class="right_bottom">
+				<p>
+					<a href="#">热卖男装</a>
+					<a href="#">源选厂货</a>
+					<a href="#">裙子</a>
+					<a href="#">元气潮帽</a>
+				</p>
+				<p>
+					<a href="#">热卖男装</a>
+					<a href="#">源选厂货</a>
+					<a href="#">裙子</a>
+					<a href="#">元气潮帽</a>
+				</p>
+			</div>
+		</div>
+	</div>
+	`;
+	}
+	$(".stn_con_box")[0].innerHTML=htmlStr2;
+}
 
 function showshop1(str){
 	let arr1 = JSON.parse(str);
 	let htmlStr1 = "";
-	for(let i=0;i<arr1.length;i++){
+	for(let i=0;i<4;i++){
 	htmlStr1+=`
 	<div class="stn_con">
 		<div class="con_left">

@@ -120,6 +120,8 @@ window.onload =function(){
 				var x = evt.clientX - disx - offsetLeft;
 				x = x<0 ? 0 : (x>(this.parentNode.offsetWidth-this.offsetWidth) ? (this.parentNode.offsetWidth-this.offsetWidth) : x);
 				this.style.left = x + "px";
+				let num = x + "px";
+				$(".lvColor").css({width:num});
 			}
 		}
 		btn.onmouseup = function(event){
@@ -127,11 +129,19 @@ window.onload =function(){
 			document.body.onmousemove = "";
 			if(this.offsetLeft < (this.parentNode.offsetWidth-this.offsetWidth)){
 				move(this, {left:0});
+				$(".lvColor").html('');
 			} else {
 				this.style.left = this.parentNode.offsetWidth-this.offsetWidth+"px";
+				over();
 			}
 		}
 	});
+	function over(){
+		$(".lvColor img").css("display","block");
+		setTimeout(function(){
+			$(".lvColor").html('验证通过');
+		},1000)
+	}
 	function move(ele, obj){
 		var speed = 2;
 		var timer = setInterval(function(){
@@ -141,5 +151,7 @@ window.onload =function(){
 				return;
 			}
 			ele.style.left = ele.offsetLeft - speed + "px";
+			let num = ele.offsetLeft - speed + "px";
+			$(".lvColor").css({width:num});
 		},4);
 	}
